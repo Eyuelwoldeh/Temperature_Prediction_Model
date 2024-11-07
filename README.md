@@ -177,7 +177,9 @@ plt.plot(test_results['Actuals'][:100])
 ```
 ### Accuracy and Results
 
-The model's predictive accuracy is calculated as the percentage difference between the predicted and actual temperatures. The final accuracy of the model is 95.83%, demonstrating that the model is quite effective at predicting the temperature based on the historical data.
+There is a csv file within this repsository which contains all the prediction values and the absolute differences between the Actual and the Predicted values. These were then used to calculate the predictive accuracy of the model.
+
+The model's predictive accuracy is calculated as the percentage difference between the predicted and actual temperatures. The final accuracy of the model is 95.83%, demonstrating that the model is quite effective at predicting the temperature based on the historical data. 
 
 ## Conclusion
 
