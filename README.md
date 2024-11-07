@@ -181,6 +181,22 @@ There is a csv file within this repsository which contains all the prediction va
 
 The model's predictive accuracy is calculated as the percentage difference between the predicted and actual temperatures. The final accuracy of the model is 95.83%, demonstrating that the model is quite effective at predicting the temperature based on the historical data. 
 
+### Formula for Prediction Accuracy
+
+To evaluate the accuracy of the model, we calculate the **percentage difference** between the predicted and actual temperature values. The formula used is:
+
+\[
+\text{Prediction Accuracy} = \frac{1}{n} \sum_{i=1}^{n} \left( 1 - \left| \frac{y_{\text{pred}}^i - y_{\text{actual}}^i}{y_{\text{actual}}^i} \right| \right) \times 100
+\]
+
+Where:
+- \( y_{\text{pred}}^i \) is the predicted temperature for the \(i^{\text{th}}\) sample,
+- \( y_{\text{actual}}^i \) is the actual temperature for the \(i^{\text{th}}\) sample,
+- \( n \) is the total number of samples.
+
+The closer the result is to 100%, the better the model's predictions are. This formula provides a percentage that reflects how closely the predicted temperatures match the actual values.
+
+
 ## Conclusion
 
 This project demonstrates the power of LSTM models for time-series forecasting tasks, specifically temperature prediction. The trained model successfully predicts future temperature values based on past observations, and the results show that LSTM is a suitable approach for handling sequential data.
