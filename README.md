@@ -185,14 +185,14 @@ The model's predictive accuracy is calculated as the percentage difference betwe
 
 To evaluate the accuracy of the model, we calculate the **percentage difference** between the predicted and actual temperature values. The formula used is:
 
-\[
+$$\[
 \text{Prediction Accuracy} = \frac{1}{n} \sum_{i=1}^{n} \left( 1 - \left| \frac{y_{\text{pred}}^i - y_{\text{actual}}^i}{y_{\text{actual}}^i} \right| \right) \times 100
-\]
+\]$$
 
 Where:
-- \( y_{\text{pred}}^i \) is the predicted temperature for the \(i^{\text{th}}\) sample,
-- \( y_{\text{actual}}^i \) is the actual temperature for the \(i^{\text{th}}\) sample,
-- \( n \) is the total number of samples.
+- $$\( y_{\text{pred}}^i \)$$ is the predicted temperature for the \(i^{\text{th}}\) sample,
+- $$\( y_{\text{actual}}^i \)$$ is the actual temperature for the \(i^{\text{th}}\) sample,
+- $$\( n \)$$ is the total number of samples.
 
 The closer the result is to 100%, the better the model's predictions are. This formula provides a percentage that reflects how closely the predicted temperatures match the actual values.
 
